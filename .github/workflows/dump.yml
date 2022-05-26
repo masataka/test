@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Dump context
         env:
-          GITHUB_CONTEXT: ${{ toJson(github.event) }}
+          GITHUB_CONTEXT: ${{ toJson(github) }}
         run:
           echo -e "$GITHUB_CONTEXT\n"
         shell: bash
