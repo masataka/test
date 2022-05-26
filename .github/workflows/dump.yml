@@ -1,9 +1,17 @@
 name: dump
-
-on: [pull_request, pull_request_review]
+on:
+  push:
+  pull_request:
+    types: [opened, closed, review_requested, review_request_removed]
+  pull_request_review:
+    types: [submitted]
 jobs:
   dump:
     runs-on: ubuntu-latest
     steps:
-      - name: Dump context
-        uses: crazy-max/ghaction-dump-context@v1
+      - name: Dump github context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run:
+          echo -e "$GITHUB_CONTEXT\n"
+        shell: bash
