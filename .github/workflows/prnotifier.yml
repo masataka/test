@@ -1,0 +1,23 @@
+name: PRNotifier
+on:
+  pull_request:
+    types: [closed, review_requested, review_request_removed]
+  pull_request_review:
+    types: [submitted]
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dump github context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run:
+          echo -e "$GITHUB_CONTEXT\n"
+        shell: bash
+      - name: PRNotifier
+        uses: masataka/actions@v0.0.1
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          slackToken: xoxb-1173400515654-3591028285651-UBIR0dmhOPsU5VTvG7vTxl0r
+          slackChannel: C03J2Q1DKAL
+          slackAccounts: accounts.json
