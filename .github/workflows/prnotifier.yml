@@ -14,4 +14,4 @@ jobs:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           slackToken: xoxb-1173400515654-3591028285651-UBIR0dmhOPsU5VTvG7vTxl0r
           slackChannel: C03J2Q1DKAL
-          slackAccounts: workflows/accounts.json
+          slackAccounts: .github/workflows/accounts.json
