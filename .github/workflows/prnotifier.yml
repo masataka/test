@@ -15,7 +15,7 @@ jobs:
         run:
           echo -e "$GITHUB_CONTEXT\n"
         shell: bash
-      - uses: masataka/actions@v0.0.4
+      - uses: masataka/actions@v0.0.5
         env:
           NODE_OPTIONS: --enable-source-maps
         with:
