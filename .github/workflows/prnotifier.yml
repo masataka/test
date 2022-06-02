@@ -21,7 +21,7 @@ jobs:
           NODE_OPTIONS: --enable-source-maps
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-          slackToken: xoxb-1173400515654-3591028285651-UBIR0dmhOPsU5VTvG7vTxl0r
-          slackChannel: C03J2Q1DKAL
+          slackToken: ${{ secrets.SLACK_TOKEN }}
+          slackChannel: ${{ secrets.SLACK_CHANNEL }}
           slackAccounts: .github/workflows/accounts.json
           pushMessage: Deployment flow complete
