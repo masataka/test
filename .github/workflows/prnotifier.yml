@@ -9,6 +9,12 @@ jobs:
   dump:
     runs-on: ubuntu-latest
     steps:
+      - name: Dump github context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run:
+          echo -e "$GITHUB_CONTEXT\n"
+        shell: bash
       - uses: actions/checkout@v2
       - uses: masataka/actions@v0.0.4
         env:
@@ -19,9 +25,3 @@ jobs:
           slackChannel: C03J2Q1DKAL
           slackAccounts: .github/workflows/accounts.json
           pushMessage: Deployment flow complete
-      - name: Dump github context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run:
-          echo -e "$GITHUB_CONTEXT\n"
-        shell: bash
