@@ -15,7 +15,7 @@ jobs:
         run:
           echo -e "$GITHUB_CONTEXT\n"
         shell: bash
-      - uses: masataka/actions@v0.0.5
+      - uses: masataka/actions@v0.0.6
         env:
           NODE_OPTIONS: --enable-source-maps
         with:
@@ -23,4 +23,5 @@ jobs:
           slackToken: ${{ secrets.SLACK_TOKEN }}
           slackChannel: ${{ secrets.SLACK_CHANNEL }}
           slackAccounts: ${{ secrets.SLACK_ACCOUNTS }}
+          emptyBodyWarning: body of this pull request is empty.
           pushMessage: Deployment flow complete
