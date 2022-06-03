@@ -2,7 +2,7 @@ name: pull-request-notify
 on:
   push:
   pull_request:
-    types: [closed, review_requested, review_request_removed]
+    types: [edited, closed, review_requested, review_request_removed]
   pull_request_review:
     types: [submitted]
 jobs:
