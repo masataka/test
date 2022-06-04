@@ -19,3 +19,5 @@
 ## LOG DISPLAY
 
 ## LOG DISPLAY remove &gt;
+
+## EditedLog
