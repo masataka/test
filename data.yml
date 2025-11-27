@@ -1,12 +1,16 @@
 - year: 2025/10/01
   text: ClipCrow v3.1をリリースしました。通し番号でカードの参照を投稿するのと、タグを用いたメンション
-  link: 'https://note.com/clipcrow/n/nf5c19c5924d0'
+  link: https://note.com/clipcrow/n/nf5c19c5924d0
 - year: 2025/10/14
   text: ClipCrow v3.2をリリースしました。ファイル共有機能とカード参照の投稿とに便利機能を追加しました
-  link: 'https://note.com/clipcrow/n/n4e69533ebc30'
+  link: https://note.com/clipcrow/n/n4e69533ebc30
 - year: 2025/10/29
   text: ClipCrow v3.3をリリースしました。詳細画面とチャット画面の遷移に3D効果を付与しました
-  link: 'https://note.com/clipcrow/n/nb118245dac29'
+  link: https://note.com/clipcrow/n/nb118245dac29
 - year: 2025/11/12
   text: ClipCrow v3.4をリリースしました。大画面時の表示とカード一覧のフィルタに機能を追加しました
-  link: 'https://note.com/clipcrow/n/nb2e854f6772a'
+  link: https://note.com/clipcrow/n/nb2e854f6772a
+- year: 2025/11/26
+  text: ClipCrow v3.5をリリースしました。
+  link: https://note.com/clipcrow/n/nb2e854f6772a
+  note: フォルダとテンプレートのデザイン変更
