@@ -5,4 +5,4 @@ version: ''
 ---
 ### image1
 
-![FBアカウントアイコン](bio_fb.jpgl)
+![FBアカウントアイコン](bio_fb.jpg)
