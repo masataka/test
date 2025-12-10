@@ -2,7 +2,9 @@
 subtitle: ''
 author: ''
 version: ''
+date: 2025-12-10T21:10
 ---
+
 ### image1
 
 ![Nearby画像](bio_fb.jpg)
